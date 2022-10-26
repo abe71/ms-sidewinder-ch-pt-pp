@@ -1,2 +1,2 @@
-# ms-sidewinder-ch-pt-pp
-Joystick gremlin for ms-sidewinder2 and CH Products pro throttle and pedals and TQ?
+# ms-sidewinder-keyboard-modes
+A joystick gremlin map for a microsoft-sidewinder2 joystick using the keyboard for modecontrol
