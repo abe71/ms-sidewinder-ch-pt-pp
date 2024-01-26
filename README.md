@@ -4,7 +4,7 @@ A joystick gremlin map for vjoy, microsoft-sidewinder2 joystick, ch-pro throttle
 ## vJoy
 configure vjoy 1 and 2 with at least the 4 first axises, 2 POVs and 32 buttons. The number of axises or buttons must differ for joystick gremlin to work, so I use 33 buttons for vjoy 2 otherwise as the default.
 
-## HiHide
+## HidHide
 I use hidHide:
 https://github.com/nefarius/HidHide/releases
 To hide the physical inputs from the elite, it simplifies the key/axis mapping  a lot.
