@@ -38,4 +38,4 @@ This repeats for higher modes. Pushing button 5 - 8 controls the "sticky mode" o
 To get back to "normal" again, push button 5 on the sidewinder.
 
 ## elite dangerous binds
-To use the binds in this repo you must first make sure that vJoy is configured. Then just copy it over to %userprofile%\AppData\Local\Frontier Developments\Elite Dangerous\Options\Bindings
+To use the binds in this repo you must first make sure that vJoy is configured. Then just copy Abe.4.0.binds over to %userprofile%\AppData\Local\Frontier Developments\Elite Dangerous\Options\Bindings
