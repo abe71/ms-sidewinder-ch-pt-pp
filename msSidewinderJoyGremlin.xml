@@ -45,22 +45,25 @@
             <mode name="1">
                 <axis description="" id="1">
                     <container type="basic">
-                        <action-set>
-                            <remap axis="1" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
-                        </action-set>
+                        <action-set/>
                     </container>
                 </axis>
                 <axis description="" id="2">
                     <container type="basic">
-                        <action-set>
-                            <remap axis="2" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
-                        </action-set>
+                        <action-set/>
                     </container>
                 </axis>
                 <axis description="" id="3">
                     <container type="basic">
                         <action-set>
-                            <remap axis="4" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
+                            <remap axis="3" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
+                            <response-curve>
+                                <mapping type="cubic-spline">
+                                    <control-point x="-1.0" y="-1.0"/>
+                                    <control-point x="1.0" y="1.0"/>
+                                </mapping>
+                                <deadzone center-high="0.0" center-low="0.0" high="0.98" low="-0.97"/>
+                            </response-curve>
                         </action-set>
                     </container>
                 </axis>
@@ -168,9 +171,26 @@
                     </container>
                 </button>
                 <hat description="" id="1">
-                    <container type="basic">
+                    <container button-count="4" type="hat_buttons">
                         <action-set>
-                            <remap hat="1" vjoy="2"/>
+                            <map-to-keyboard>
+                                <key extended="True" scan-code="77"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="True" scan-code="80"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="True" scan-code="75"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="True" scan-code="72"/>
+                            </map-to-keyboard>
                         </action-set>
                     </container>
                 </hat>
@@ -188,9 +208,7 @@
                 <axis description="" id="3"/>
                 <button description="" id="1">
                     <container type="basic">
-                        <action-set>
-                            <remap button="15" vjoy="1"/>
-                        </action-set>
+                        <action-set/>
                     </container>
                 </button>
                 <button description="" id="2">
@@ -286,19 +304,36 @@
                         </action-set>
                     </container>
                 </button>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container button-count="4" type="hat_buttons">
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="False" scan-code="28"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="False" scan-code="57"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="False" scan-code="14"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="False" scan-code="1"/>
+                            </map-to-keyboard>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="3">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
-                <button description="" id="1">
-                    <container type="basic">
-                        <action-set>
-                            <remap button="29" vjoy="1"/>
-                        </action-set>
-                    </container>
-                </button>
+                <button description="" id="1"/>
                 <button description="" id="2">
                     <container type="basic">
                         <action-set>
@@ -325,90 +360,107 @@
                 <button description="" id="7">
                     <container type="basic">
                         <action-set>
-                            <remap button="33" vjoy="1"/>
+                            <remap button="14" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="8">
                     <container type="basic">
                         <action-set>
-                            <remap button="34" vjoy="1"/>
+                            <remap button="15" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="9">
                     <container type="basic">
                         <action-set>
-                            <remap button="35" vjoy="1"/>
+                            <remap button="16" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="10">
                     <container type="basic">
                         <action-set>
-                            <remap button="36" vjoy="1"/>
+                            <remap button="17" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="11">
                     <container type="basic">
                         <action-set>
-                            <remap button="37" vjoy="1"/>
+                            <remap button="18" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="12">
                     <container type="basic">
                         <action-set>
-                            <remap button="38" vjoy="1"/>
+                            <remap button="19" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="13">
                     <container type="basic">
                         <action-set>
-                            <remap button="39" vjoy="1"/>
+                            <remap button="20" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="14">
                     <container type="basic">
                         <action-set>
-                            <remap button="40" vjoy="1"/>
+                            <remap button="21" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="15">
                     <container type="basic">
                         <action-set>
-                            <remap button="41" vjoy="1"/>
+                            <remap button="22" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="16">
                     <container type="basic">
                         <action-set>
-                            <remap button="42" vjoy="1"/>
+                            <remap button="23" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container button-count="4" type="hat_buttons">
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="True" scan-code="79"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="True" scan-code="71"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="True" scan-code="83"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="True" scan-code="82"/>
+                            </map-to-keyboard>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="4">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
-                <button description="" id="1">
-                    <container type="basic">
-                        <action-set>
-                            <remap button="43" vjoy="1"/>
-                        </action-set>
-                    </container>
-                </button>
+                <button description="" id="1"/>
                 <button description="" id="2">
                     <container type="basic">
                         <action-set>
-                            <remap button="44" vjoy="1"/>
+                            <remap button="25" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
@@ -417,88 +469,107 @@
                 <button description="" id="5">
                     <container type="basic">
                         <action-set>
-                            <remap button="45" vjoy="1"/>
+                            <remap button="26" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="6">
                     <container type="basic">
                         <action-set>
-                            <remap button="46" vjoy="1"/>
+                            <remap button="27" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="7">
                     <container type="basic">
                         <action-set>
-                            <remap button="47" vjoy="1"/>
+                            <remap button="28" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="8">
                     <container type="basic">
                         <action-set>
-                            <remap button="48" vjoy="1"/>
+                            <remap button="29" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="9">
                     <container type="basic">
                         <action-set>
-                            <remap button="49" vjoy="1"/>
+                            <remap button="30" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="10">
                     <container type="basic">
                         <action-set>
-                            <remap button="50" vjoy="1"/>
+                            <remap button="31" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="11">
                     <container type="basic">
                         <action-set>
-                            <remap button="51" vjoy="1"/>
+                            <remap button="32" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="12">
                     <container type="basic">
                         <action-set>
-                            <remap button="52" vjoy="1"/>
+                            <remap button="15" vjoy="1"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="13">
                     <container type="basic">
                         <action-set>
-                            <remap button="53" vjoy="1"/>
+                            <remap button="29" vjoy="1"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="14">
                     <container type="basic">
                         <action-set>
-                            <remap button="54" vjoy="1"/>
+                            <remap button="24" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
                 <button description="" id="15">
                     <container type="basic">
-                        <action-set>
-                            <remap button="55" vjoy="1"/>
-                        </action-set>
+                        <action-set/>
                     </container>
                 </button>
                 <button description="" id="16">
                     <container type="basic">
-                        <action-set>
-                            <remap button="56" vjoy="1"/>
-                        </action-set>
+                        <action-set/>
                     </container>
                 </button>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container button-count="4" type="hat_buttons">
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="False" scan-code="13"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="False" scan-code="13"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="False" scan-code="13"/>
+                            </map-to-keyboard>
+                        </action-set>
+                        <action-set>
+                            <map-to-keyboard>
+                                <key extended="False" scan-code="13"/>
+                            </map-to-keyboard>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="5">
                 <axis description="" id="1"/>
@@ -548,31 +619,17 @@
         </device>
         <device device-guid="{B75B23F0-7D19-11EB-8005-444553540000}" label="" name="CH Pro Pedals USB" type="joystick">
             <mode name="1">
-                <axis description="" id="1">
-                    <container type="basic">
-                        <action-set>
-                            <remap axis="7" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
-                        </action-set>
-                    </container>
-                </axis>
-                <axis description="" id="2">
-                    <container type="basic">
-                        <action-set>
-                            <remap axis="8" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
-                        </action-set>
-                    </container>
-                </axis>
+                <axis description="" id="1"/>
+                <axis description="" id="2"/>
                 <axis description="" id="3">
                     <container type="basic">
                         <action-set>
-                            <remap axis="3" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
+                            <remap axis="1" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
                             <response-curve>
                                 <mapping type="cubic-spline">
                                     <control-point x="-1.0" y="-1.0"/>
                                     <control-point x="1.0" y="1.0"/>
-                                    <control-point x="0.0" y="0.0"/>
-                                    <control-point x="0.624" y="0.424"/>
-                                    <control-point x="-0.624" y="-0.424"/>
+                                    <control-point x="0.008" y="-0.044"/>
                                 </mapping>
                                 <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-1.0"/>
                             </response-curve>
@@ -668,7 +725,17 @@
                 <axis description="" id="7">
                     <container type="basic">
                         <action-set>
-                            <remap axis="7" axis-scaling="1.0" axis-type="absolute" vjoy="2"/>
+                            <remap axis="4" axis-scaling="0.0" axis-type="absolute" vjoy="2"/>
+                            <response-curve>
+                                <mapping type="cubic-spline">
+                                    <control-point x="-1.0" y="-1.0"/>
+                                    <control-point x="1.0" y="1.0"/>
+                                    <control-point x="0.892" y="0.32"/>
+                                    <control-point x="0.828" y="0.132"/>
+                                    <control-point x="0.628" y="0.0"/>
+                                </mapping>
+                                <deadzone center-high="0.1" center-low="-0.1" high="1.0" low="-1.0"/>
+                            </response-curve>
                         </action-set>
                     </container>
                 </axis>
@@ -828,7 +895,7 @@
                 <button description="" id="3">
                     <container type="basic">
                         <action-set>
-                            <remap button="11" vjoy="2"/>
+                            <remap button="12" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
@@ -1243,7 +1310,7 @@
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
-                <axis description="" id="7"/>
+                <axis description="" id="4"/>
                 <button description="" id="1"/>
                 <button description="" id="2"/>
                 <button description="" id="3"/>
@@ -1283,7 +1350,7 @@
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
-                <axis description="" id="7"/>
+                <axis description="" id="4"/>
                 <button description="" id="1"/>
                 <button description="" id="2"/>
                 <button description="" id="3"/>
@@ -1297,6 +1364,25 @@
                 <button description="" id="11"/>
                 <button description="" id="12"/>
                 <button description="" id="13"/>
+                <button description="" id="14"/>
+                <button description="" id="15"/>
+                <button description="" id="16"/>
+                <button description="" id="17"/>
+                <button description="" id="18"/>
+                <button description="" id="19"/>
+                <button description="" id="20"/>
+                <button description="" id="21"/>
+                <button description="" id="22"/>
+                <button description="" id="23"/>
+                <button description="" id="24"/>
+                <button description="" id="25"/>
+                <button description="" id="26"/>
+                <button description="" id="27"/>
+                <button description="" id="28"/>
+                <button description="" id="29"/>
+                <button description="" id="30"/>
+                <button description="" id="31"/>
+                <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
             </mode>
@@ -1304,7 +1390,7 @@
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
-                <axis description="" id="7"/>
+                <axis description="" id="4"/>
                 <button description="" id="1"/>
                 <button description="" id="2"/>
                 <button description="" id="3"/>
@@ -1318,6 +1404,25 @@
                 <button description="" id="11"/>
                 <button description="" id="12"/>
                 <button description="" id="13"/>
+                <button description="" id="14"/>
+                <button description="" id="15"/>
+                <button description="" id="16"/>
+                <button description="" id="17"/>
+                <button description="" id="18"/>
+                <button description="" id="19"/>
+                <button description="" id="20"/>
+                <button description="" id="21"/>
+                <button description="" id="22"/>
+                <button description="" id="23"/>
+                <button description="" id="24"/>
+                <button description="" id="25"/>
+                <button description="" id="26"/>
+                <button description="" id="27"/>
+                <button description="" id="28"/>
+                <button description="" id="29"/>
+                <button description="" id="30"/>
+                <button description="" id="31"/>
+                <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
             </mode>
@@ -1325,7 +1430,7 @@
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
-                <axis description="" id="7"/>
+                <axis description="" id="4"/>
                 <button description="" id="1"/>
                 <button description="" id="2"/>
                 <button description="" id="3"/>
@@ -1339,6 +1444,25 @@
                 <button description="" id="11"/>
                 <button description="" id="12"/>
                 <button description="" id="13"/>
+                <button description="" id="14"/>
+                <button description="" id="15"/>
+                <button description="" id="16"/>
+                <button description="" id="17"/>
+                <button description="" id="18"/>
+                <button description="" id="19"/>
+                <button description="" id="20"/>
+                <button description="" id="21"/>
+                <button description="" id="22"/>
+                <button description="" id="23"/>
+                <button description="" id="24"/>
+                <button description="" id="25"/>
+                <button description="" id="26"/>
+                <button description="" id="27"/>
+                <button description="" id="28"/>
+                <button description="" id="29"/>
+                <button description="" id="30"/>
+                <button description="" id="31"/>
+                <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
             </mode>
@@ -1346,7 +1470,6 @@
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
-                <axis description="" id="7"/>
                 <button description="" id="1"/>
                 <button description="" id="2"/>
                 <button description="" id="3"/>
@@ -1408,8 +1531,6 @@
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
                 <axis description="" id="4"/>
-                <axis description="" id="7"/>
-                <axis description="" id="8"/>
                 <button description="" id="1"/>
                 <button description="" id="2"/>
                 <button description="" id="3"/>
@@ -1467,14 +1588,14 @@
                 <button description="" id="55"/>
                 <button description="" id="56"/>
                 <button description="" id="57"/>
+                <hat description="" id="1"/>
+                <hat description="" id="2"/>
             </mode>
             <mode name="2">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
                 <axis description="" id="4"/>
-                <axis description="" id="7"/>
-                <axis description="" id="8"/>
                 <button description="" id="1"/>
                 <button description="" id="2"/>
                 <button description="" id="3"/>
@@ -1532,14 +1653,14 @@
                 <button description="" id="55"/>
                 <button description="" id="56"/>
                 <button description="" id="57"/>
+                <hat description="" id="1"/>
+                <hat description="" id="2"/>
             </mode>
             <mode name="3">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
                 <axis description="" id="4"/>
-                <axis description="" id="7"/>
-                <axis description="" id="8"/>
                 <button description="" id="1"/>
                 <button description="" id="2"/>
                 <button description="" id="3"/>
@@ -1597,14 +1718,14 @@
                 <button description="" id="55"/>
                 <button description="" id="56"/>
                 <button description="" id="57"/>
+                <hat description="" id="1"/>
+                <hat description="" id="2"/>
             </mode>
             <mode name="4">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
                 <axis description="" id="4"/>
-                <axis description="" id="7"/>
-                <axis description="" id="8"/>
                 <button description="" id="1"/>
                 <button description="" id="2"/>
                 <button description="" id="3"/>
@@ -1662,14 +1783,14 @@
                 <button description="" id="55"/>
                 <button description="" id="56"/>
                 <button description="" id="57"/>
+                <hat description="" id="1"/>
+                <hat description="" id="2"/>
             </mode>
             <mode name="5">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
                 <axis description="" id="4"/>
-                <axis description="" id="7"/>
-                <axis description="" id="8"/>
                 <button description="" id="1"/>
                 <button description="" id="2"/>
                 <button description="" id="3"/>
@@ -2941,6 +3062,25 @@
     <plugins>
         <plugin file-name="C:/Users/Abe/Documents/joystickMaps/ms-sidewinder-ch-pt-pp/4buttonFixedWirh2ButtonTemporaryModeSwitch.py">
             <instance name="Default"/>
+        </plugin>
+        <plugin file-name="C:/Users/Abe/Documents/joystickMaps/ms-sidewinder-ch-pt-pp/vjoy_combine.py">
+            <instance name="Default">
+                <variable is-optional="False" name="Mode" type="Mode" value="1"/>
+                <variable device-guid="{B75B23F0-7D19-11EB-8005-444553540000}" device-name="CH Pro Pedals USB" input-id="1" input-type="axis" is-optional="False" name="Input physical axis 1" type="PhysicalInput"/>
+                <variable is-optional="False" name="Axis 1 multiplier" type="Float" value="1.0"/>
+                <variable is-optional="False" name="Invert axis 1?" type="Bool" value="1"/>
+                <variable device-guid="{B75B23F0-7D19-11EB-8005-444553540000}" device-name="CH Pro Pedals USB" input-id="2" input-type="axis" is-optional="False" name="Input physical axis 2" type="PhysicalInput"/>
+                <variable is-optional="False" name="Axis 2 multiplier" type="Float" value="1.0"/>
+                <variable is-optional="False" name="Invert axis 2?" type="Bool" value="0"/>
+                <variable input-id="2" input-type="axis" is-optional="False" name="Output virtual axis" type="VirtualInput" vjoy-id="1"/>
+            </instance>
+        </plugin>
+        <plugin file-name="C:/Users/Abe/Documents/joystickMaps/ms-sidewinder-ch-pt-pp/continuos_fire.py">
+            <instance name="Default">
+                <variable is-optional="False" name="Mode" type="Mode" value="2"/>
+                <variable device-guid="{F167CF70-65AE-11EC-8001-444553540000}" device-name="SideWinder Force Feedback 2 Joystick" input-id="1" input-type="button" is-optional="False" name="Input Button" type="PhysicalInput"/>
+                <variable input-id="1" input-type="button" is-optional="False" name="Output Button" type="VirtualInput" vjoy-id="2"/>
+            </instance>
         </plugin>
     </plugins>
 </profile>
