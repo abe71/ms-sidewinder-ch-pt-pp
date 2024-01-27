@@ -19,23 +19,28 @@ http://whitemagic.github.io/JoystickGremlin
 Make sure to install vjoy devices as described above before loading the map into joystick gremlin.
 
 
-## Toe breaks are strafe up down axis
-The toe breaks are combined into one axis in this map and are mapped as strafe the up/down axis in elite.
-
-## Sticky fire button
-On mode 2 the fire button is sticky. That is nice for mining. Map your collector limpets to the same fire group as the mining lasers, push the fire button in mode 2 and sit back and relax until the asteroid is depleted.
-
 ## Modes
-There are way too many modes for elite on this map, buttons 5-8 on the sidewinder probably could find a better use. Button 3 and 4 controls mode 1-4 in a non sticky way, just like a shift/control key combination would. 
+Buttons 5-8 on the sidewinder is used for "sticky mode". Button 3 and 4 controls mode 1-4 just like a shift/control key combination would. 
 
 * Mode 1: Release both button 3 and 4 on the throttle, 
 * Mode 2: button 4 on the throttle
 * Mode 3 button 3 on the throttle
 * Mode 4: both button 3 and 4
 
-This repeats for higher modes. Pushing button 5 - 8 controls the "sticky mode" on the sidewinder. So pushing button 6 on the sidewinder gives mode 5 if button 3 and 4 on the throttle are released, mode 6 if throttle button 4 is pressed and so on. However they all are unmapped so all higher modes behave as its parent mode which currently translates to mode 1.
+This repeats for higher modes. Pushing button 5 - 8 controls the "sticky mode" on the sidewinder. So pushing button 6 on the sidewinder gives mode 5 if button 3 and 4 on the throttle are released, mode 6 if throttle button 4 is pressed and so on, so all in all there are 16 modes, for shift/control modes for each sticky mode.
 
-To get back to "normal" again, push button 5 on the sidewinder.
+## Button mapping
+All buttons are mapped to joystick buttons different for all modes, making use of 8 vjoy devices. There are a few exceptions:
 
-## elite dangerous binds
-To use the binds in this repo you must first make sure that vJoy is configured. Then just copy Abe.4.0.binds over to %userprofile%\AppData\Local\Frontier Developments\Elite Dangerous\Options\Bindings
+* The hats have only the first 2 shifted modes for all sticky modes as unique hats, shifted mode 3 and 4 falls back to the first hat, this is true for both the pro throttle and the sidewinder
+* Button 1, the fire button on the sidewinder is mapped to the same button in all modes
+* Button 1, the ministick on the pro throttle is mapped to mouse buttons and is the same for all sticky modes: 
+  - mode 1: left mouse button
+  - mode 2: right mouse button
+  - mode 3: middle mouse button
+  - mode 4: forward mouse button
+* Button 3 and 4 on the pro throttle are shift mode buttons
+* button 5-8 on the sidewinder are sticky mode buttons
+
+## Pro throttle Ministick
+The PT ministick is mapped as mouse

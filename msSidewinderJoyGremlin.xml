@@ -40,7 +40,7 @@
                 <axis description="" id="3">
                     <container type="basic">
                         <action-set>
-                            <remap axis="3" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
+                            <remap axis="4" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
                             <response-curve>
                                 <mapping type="cubic-spline">
                                     <control-point x="-1.0" y="-1.0"/>
@@ -1761,17 +1761,30 @@
         </device>
         <device device-guid="{B75B23F0-7D19-11EB-8005-444553540000}" label="" name="CH Pro Pedals USB" type="joystick">
             <mode name="1">
-                <axis description="" id="1"/>
-                <axis description="" id="2"/>
-                <axis description="" id="3">
+                <axis description="" id="1">
                     <container type="basic">
                         <action-set>
                             <remap axis="1" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
+                        </action-set>
+                    </container>
+                </axis>
+                <axis description="" id="2">
+                    <container type="basic">
+                        <action-set>
+                            <remap axis="2" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
+                        </action-set>
+                    </container>
+                </axis>
+                <axis description="" id="3">
+                    <container type="basic">
+                        <action-set>
+                            <remap axis="3" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
                             <response-curve>
                                 <mapping type="cubic-spline">
                                     <control-point x="-1.0" y="-1.0"/>
                                     <control-point x="1.0" y="1.0"/>
-                                    <control-point x="0.008" y="-0.044"/>
+                                    <control-point x="-0.892" y="-0.764"/>
+                                    <control-point x="0.892" y="0.764"/>
                                 </mapping>
                                 <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-1.0"/>
                             </response-curve>
@@ -1911,16 +1924,6 @@
                     <container type="basic">
                         <action-set>
                             <remap axis="4" axis-scaling="0.0" axis-type="absolute" vjoy="2"/>
-                            <response-curve>
-                                <mapping type="cubic-spline">
-                                    <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="1.0" y="1.0"/>
-                                    <control-point x="0.892" y="0.32"/>
-                                    <control-point x="0.828" y="0.132"/>
-                                    <control-point x="0.628" y="0.0"/>
-                                </mapping>
-                                <deadzone center-high="0.1" center-low="-0.1" high="1.0" low="-1.0"/>
-                            </response-curve>
                         </action-set>
                     </container>
                 </axis>
