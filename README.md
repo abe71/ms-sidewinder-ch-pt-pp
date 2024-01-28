@@ -1,25 +1,33 @@
 # ms-sidewinder-ch-pro-throttle-ch-pro-pedals
 A joystick gremlin map for vjoy, microsoft-sidewinder2 joystick, ch-pro throttle and ch pro pedals
 
-## vJoy
-configure vjoy 1 and 2 with at least the 4 first axises, 2 POVs and 32 buttons. The number of axises or buttons must differ for joystick gremlin to work, so I use 33 buttons for vjoy 2 otherwise as the default.
+## setup
 
-## HidHide
+### vJoy
+configure vjoy 1 to 8 with at least the 4 first axises, 2 POVs and 32 buttons. The number of axises or buttons must differ for joystick gremlin to work, so I use 33 buttons for vjoy 2, 34 buttons for vjoy3 etc. The map itself ignores these extraneous buttons, they are there just for joystick gremlin to recognize them as different devices.
+
+### HidHide
 I use hidHide:
 https://github.com/nefarius/HidHide/releases
-To hide the physical inputs from the elite, it simplifies the key/axis mapping  a lot.
+to hide the physical inputs from IL2 which can not handle more than 8 controllers in total.
 
 Make sure joystick gremlin is whitelisted before hiding your devices. I also whitelist the CH control manager to be able to calibrate the throttle and pedals.
 
-## joystick gremlin
+### joystick gremlin
 I use joustick gremlin Release 13.3
 
 http://whitemagic.github.io/JoystickGremlin 
 
 Make sure to install vjoy devices as described above before loading the map into joystick gremlin.
 
+### IL2
+Put abe.action in data\input\custom in you il2 installation folder. Also rename the devices.txt to devices.txt.backup in the data\input folder, otherwise if you have used other controllers the game might get confused. devices.txt will be regenerated at game startup with the correct controller mapping, so make sure hidHide is activated before starting IL2. You can always circle back and delete the devices.txt and restart the game if you forgot.
 
-## Modes
+
+## Description of the map
+I have found the use of modes to invaluable since it multiplies the actions that can be programmed. The amount of virtual buttons might feel overwhelming at first, but I have found that it allows me to group things together and makes it Easier to remember there everything is. You will have access to 256 virtual buttons plus 4 mouse buttons and 16 virtual hats + 8 axises. I use to ministick as mouse, but it would be easy to have that as 2 more axises if wanted.
+
+### Modes
 Buttons 5-8 on the sidewinder is used for "sticky mode". Button 3 and 4 controls mode 1-4 just like a shift/control key combination would. 
 
 * Mode 1: Release both button 3 and 4 on the throttle, 

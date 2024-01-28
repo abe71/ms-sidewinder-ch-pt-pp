@@ -162,7 +162,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="9" name="10">
+            <mode inherit="2" name="10">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
@@ -268,7 +268,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="9" name="11">
+            <mode inherit="3" name="11">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
@@ -366,9 +366,15 @@
                         </action-set>
                     </container>
                 </button>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="3" vjoy="5"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
-            <mode inherit="9" name="12">
+            <mode inherit="4" name="12">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
@@ -466,7 +472,13 @@
                         </action-set>
                     </container>
                 </button>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="4" vjoy="5"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="13">
                 <axis description="" id="1"/>
@@ -577,7 +589,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="13" name="14">
+            <mode inherit="2" name="14">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
@@ -683,7 +695,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="13" name="15">
+            <mode inherit="3" name="15">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
@@ -781,10 +793,22 @@
                         </action-set>
                     </container>
                 </button>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="3" vjoy="7"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
-            <mode inherit="13" name="16">
-                <axis description="" id="1"/>
+            <mode inherit="4" name="16">
+                <axis description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap axis="1" axis-scaling="1.0" axis-type="absolute" vjoy="7"/>
+                        </action-set>
+                    </container>
+                </axis>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
                 <button description="" id="1"/>
@@ -883,7 +907,13 @@
                         </action-set>
                     </container>
                 </button>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="4" vjoy="1"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="2">
                 <axis description="" id="1"/>
@@ -1101,7 +1131,13 @@
                         </action-set>
                     </container>
                 </button>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="3" vjoy="1"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="4">
                 <axis description="" id="1"/>
@@ -1207,7 +1243,13 @@
                         </action-set>
                     </container>
                 </button>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="4" vjoy="1"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="5">
                 <axis description="" id="1"/>
@@ -1318,7 +1360,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="5" name="6">
+            <mode inherit="2" name="6">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
@@ -1424,7 +1466,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="5" name="7">
+            <mode inherit="3" name="7">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
@@ -1522,9 +1564,15 @@
                         </action-set>
                     </container>
                 </button>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="3" vjoy="3"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
-            <mode inherit="5" name="8">
+            <mode inherit="4" name="8">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
@@ -1628,7 +1676,13 @@
                         </action-set>
                     </container>
                 </button>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="4" vjoy="3"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="9">
                 <axis description="" id="1"/>
@@ -1742,20 +1796,20 @@
         </device>
         <device device-guid="{6F1D2B61-D5A0-11CF-BFC7-444553540000}" label="" name="keyboard" type="keyboard">
             <mode name="1"/>
-            <mode inherit="9" name="10"/>
-            <mode inherit="9" name="11"/>
-            <mode inherit="9" name="12"/>
+            <mode inherit="2" name="10"/>
+            <mode inherit="3" name="11"/>
+            <mode inherit="4" name="12"/>
             <mode inherit="1" name="13"/>
-            <mode inherit="13" name="14"/>
-            <mode inherit="13" name="15"/>
-            <mode inherit="13" name="16"/>
+            <mode inherit="2" name="14"/>
+            <mode inherit="3" name="15"/>
+            <mode inherit="4" name="16"/>
             <mode inherit="1" name="2"/>
             <mode inherit="1" name="3"/>
             <mode inherit="1" name="4"/>
             <mode inherit="1" name="5"/>
-            <mode inherit="5" name="6"/>
-            <mode inherit="5" name="7"/>
-            <mode inherit="5" name="8"/>
+            <mode inherit="2" name="6"/>
+            <mode inherit="3" name="7"/>
+            <mode inherit="4" name="8"/>
             <mode inherit="1" name="9"/>
             <mode name="Default"/>
         </device>
@@ -1792,17 +1846,17 @@
                     </container>
                 </axis>
             </mode>
-            <mode inherit="9" name="10">
+            <mode inherit="2" name="10">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
             </mode>
-            <mode inherit="9" name="11">
+            <mode inherit="3" name="11">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
             </mode>
-            <mode inherit="9" name="12">
+            <mode inherit="4" name="12">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
@@ -1812,17 +1866,17 @@
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
             </mode>
-            <mode inherit="13" name="14">
+            <mode inherit="2" name="14">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
             </mode>
-            <mode inherit="13" name="15">
+            <mode inherit="3" name="15">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
             </mode>
-            <mode inherit="13" name="16">
+            <mode inherit="4" name="16">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
@@ -1847,17 +1901,17 @@
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
             </mode>
-            <mode inherit="5" name="6">
+            <mode inherit="2" name="6">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
             </mode>
-            <mode inherit="5" name="7">
+            <mode inherit="3" name="7">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
             </mode>
-            <mode inherit="5" name="8">
+            <mode inherit="4" name="8">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="3"/>
@@ -1994,7 +2048,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="9" name="10">
+            <mode inherit="2" name="10">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="6"/>
@@ -2033,7 +2087,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="9" name="11">
+            <mode inherit="3" name="11">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="6"/>
@@ -2064,9 +2118,15 @@
                 <button description="" id="6"/>
                 <button description="" id="7"/>
                 <button description="" id="8"/>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="3" vjoy="6"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
-            <mode inherit="9" name="12">
+            <mode inherit="4" name="12">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="6"/>
@@ -2097,7 +2157,13 @@
                 <button description="" id="6"/>
                 <button description="" id="7"/>
                 <button description="" id="8"/>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="4" vjoy="6"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="13">
                 <axis description="" id="1"/>
@@ -2138,7 +2204,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="13" name="14">
+            <mode inherit="2" name="14">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="6"/>
@@ -2177,7 +2243,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="13" name="15">
+            <mode inherit="3" name="15">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="6"/>
@@ -2208,9 +2274,15 @@
                 <button description="" id="6"/>
                 <button description="" id="7"/>
                 <button description="" id="8"/>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="3" vjoy="8"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
-            <mode inherit="13" name="16">
+            <mode inherit="4" name="16">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="6"/>
@@ -2241,7 +2313,13 @@
                 <button description="" id="6"/>
                 <button description="" id="7"/>
                 <button description="" id="8"/>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="4" vjoy="8"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="2">
                 <axis description="" id="1"/>
@@ -2313,7 +2391,13 @@
                 <button description="" id="6"/>
                 <button description="" id="7"/>
                 <button description="" id="8"/>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="3" vjoy="2"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="4">
                 <axis description="" id="1"/>
@@ -2346,7 +2430,13 @@
                 <button description="" id="6"/>
                 <button description="" id="7"/>
                 <button description="" id="8"/>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="4" vjoy="2"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="5">
                 <axis description="" id="1"/>
@@ -2387,7 +2477,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="5" name="6">
+            <mode inherit="2" name="6">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="6"/>
@@ -2426,7 +2516,7 @@
                     </container>
                 </hat>
             </mode>
-            <mode inherit="5" name="7">
+            <mode inherit="3" name="7">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="6"/>
@@ -2457,9 +2547,15 @@
                 <button description="" id="6"/>
                 <button description="" id="7"/>
                 <button description="" id="8"/>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="3" vjoy="4"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
-            <mode inherit="5" name="8">
+            <mode inherit="4" name="8">
                 <axis description="" id="1"/>
                 <axis description="" id="2"/>
                 <axis description="" id="6"/>
@@ -2490,7 +2586,13 @@
                 <button description="" id="6"/>
                 <button description="" id="7"/>
                 <button description="" id="8"/>
-                <hat description="" id="1"/>
+                <hat description="" id="1">
+                    <container type="basic">
+                        <action-set>
+                            <remap hat="4" vjoy="4"/>
+                        </action-set>
+                    </container>
+                </hat>
             </mode>
             <mode inherit="1" name="9">
                 <axis description="" id="1"/>
@@ -2600,6 +2702,8 @@
                 <button description="" id="58"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="10">
                 <axis description="" id="1"/>
@@ -2686,6 +2790,8 @@
                 <button description="" id="35"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="12">
                 <axis description="" id="1"/>
@@ -2729,6 +2835,8 @@
                 <button description="" id="35"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="13">
                 <axis description="" id="1"/>
@@ -2858,6 +2966,8 @@
                 <button description="" id="35"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="16">
                 <axis description="" id="1"/>
@@ -2901,6 +3011,8 @@
                 <button description="" id="35"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="2">
                 <axis description="" id="1"/>
@@ -3033,6 +3145,8 @@
                 <button description="" id="58"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="4">
                 <axis description="" id="1"/>
@@ -3099,6 +3213,8 @@
                 <button description="" id="58"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="5">
                 <axis description="" id="1"/>
@@ -3251,6 +3367,8 @@
                 <button description="" id="35"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="8">
                 <axis description="" id="1"/>
@@ -3294,6 +3412,8 @@
                 <button description="" id="35"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="9">
                 <axis description="" id="1"/>
@@ -3379,6 +3499,8 @@
                 <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="10">
                 <axis description="" id="1"/>
@@ -3459,6 +3581,8 @@
                 <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="12">
                 <axis description="" id="1"/>
@@ -3499,6 +3623,8 @@
                 <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="13">
                 <axis description="" id="1"/>
@@ -3619,6 +3745,8 @@
                 <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="16">
                 <axis description="" id="1"/>
@@ -3659,6 +3787,8 @@
                 <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="2">
                 <axis description="" id="1"/>
@@ -3739,6 +3869,8 @@
                 <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="4">
                 <axis description="" id="1"/>
@@ -3779,6 +3911,8 @@
                 <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="5">
                 <axis description="" id="1"/>
@@ -3899,6 +4033,8 @@
                 <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="8">
                 <axis description="" id="1"/>
@@ -3939,6 +4075,8 @@
                 <button description="" id="32"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="9">
                 <axis description="" id="1"/>
@@ -4046,6 +4184,8 @@
                 <button description="" id="57"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="10">
                 <axis description="" id="1"/>
@@ -4128,6 +4268,8 @@
                 <button description="" id="33"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="12">
                 <axis description="" id="1"/>
@@ -4169,6 +4311,8 @@
                 <button description="" id="33"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="13">
                 <axis description="" id="1"/>
@@ -4292,6 +4436,8 @@
                 <button description="" id="33"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="16">
                 <axis description="" id="1"/>
@@ -4333,6 +4479,8 @@
                 <button description="" id="33"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="2">
                 <axis description="" id="1"/>
@@ -4463,6 +4611,8 @@
                 <button description="" id="57"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="4">
                 <axis description="" id="1"/>
@@ -4528,6 +4678,8 @@
                 <button description="" id="57"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="5">
                 <axis description="" id="1"/>
@@ -4675,6 +4827,8 @@
                 <button description="" id="33"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="8">
                 <axis description="" id="1"/>
@@ -4716,6 +4870,8 @@
                 <button description="" id="33"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="9">
                 <axis description="" id="1"/>
@@ -4801,6 +4957,8 @@
                 <button description="" id="34"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="10">
                 <axis description="" id="1"/>
@@ -4885,6 +5043,8 @@
                 <button description="" id="34"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="12">
                 <axis description="" id="1"/>
@@ -4927,6 +5087,8 @@
                 <button description="" id="34"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="13">
                 <axis description="" id="1"/>
@@ -5053,6 +5215,8 @@
                 <button description="" id="34"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="16">
                 <axis description="" id="1"/>
@@ -5095,6 +5259,8 @@
                 <button description="" id="34"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="2">
                 <axis description="" id="1"/>
@@ -5179,6 +5345,8 @@
                 <button description="" id="34"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="4">
                 <axis description="" id="1"/>
@@ -5221,6 +5389,8 @@
                 <button description="" id="34"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="5">
                 <axis description="" id="1"/>
@@ -5347,6 +5517,8 @@
                 <button description="" id="34"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="8">
                 <axis description="" id="1"/>
@@ -5389,6 +5561,8 @@
                 <button description="" id="34"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="9">
                 <axis description="" id="1"/>
@@ -5477,6 +5651,8 @@
                 <button description="" id="36"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="10">
                 <axis description="" id="1"/>
@@ -5565,6 +5741,8 @@
                 <button description="" id="36"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="12">
                 <axis description="" id="1"/>
@@ -5609,6 +5787,8 @@
                 <button description="" id="36"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="13">
                 <axis description="" id="1"/>
@@ -5741,6 +5921,8 @@
                 <button description="" id="36"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="16">
                 <axis description="" id="1"/>
@@ -5785,6 +5967,8 @@
                 <button description="" id="36"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="2">
                 <axis description="" id="1"/>
@@ -5873,6 +6057,8 @@
                 <button description="" id="36"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="4">
                 <axis description="" id="1"/>
@@ -5917,6 +6103,8 @@
                 <button description="" id="36"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="5">
                 <axis description="" id="1"/>
@@ -6049,6 +6237,8 @@
                 <button description="" id="36"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="8">
                 <axis description="" id="1"/>
@@ -6093,6 +6283,8 @@
                 <button description="" id="36"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="9">
                 <axis description="" id="1"/>
@@ -6206,6 +6398,8 @@
                 <button description="" id="59"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="10">
                 <axis description="" id="1"/>
@@ -6296,6 +6490,8 @@
                 <button description="" id="37"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="12">
                 <axis description="" id="1"/>
@@ -6341,6 +6537,8 @@
                 <button description="" id="37"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="13">
                 <axis description="" id="1"/>
@@ -6476,6 +6674,8 @@
                 <button description="" id="37"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="16">
                 <axis description="" id="1"/>
@@ -6521,6 +6721,8 @@
                 <button description="" id="37"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="2">
                 <axis description="" id="1"/>
@@ -6655,6 +6857,8 @@
                 <button description="" id="59"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="4">
                 <axis description="" id="1"/>
@@ -6722,6 +6926,8 @@
                 <button description="" id="59"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="5">
                 <axis description="" id="1"/>
@@ -6879,6 +7085,8 @@
                 <button description="" id="37"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="8">
                 <axis description="" id="1"/>
@@ -6924,6 +7132,8 @@
                 <button description="" id="37"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="9">
                 <axis description="" id="1"/>
@@ -7017,6 +7227,8 @@
                 <button description="" id="38"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="10">
                 <axis description="" id="1"/>
@@ -7109,6 +7321,8 @@
                 <button description="" id="38"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="12">
                 <axis description="" id="1"/>
@@ -7155,6 +7369,8 @@
                 <button description="" id="38"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="13">
                 <axis description="" id="1"/>
@@ -7293,6 +7509,8 @@
                 <button description="" id="38"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="16">
                 <axis description="" id="1"/>
@@ -7339,6 +7557,8 @@
                 <button description="" id="38"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="2">
                 <axis description="" id="1"/>
@@ -7431,6 +7651,8 @@
                 <button description="" id="38"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="4">
                 <axis description="" id="1"/>
@@ -7477,6 +7699,8 @@
                 <button description="" id="38"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="5">
                 <axis description="" id="1"/>
@@ -7615,6 +7839,8 @@
                 <button description="" id="38"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="8">
                 <axis description="" id="1"/>
@@ -7661,6 +7887,8 @@
                 <button description="" id="38"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="9">
                 <axis description="" id="1"/>
@@ -7773,6 +8001,8 @@
                 <button description="" id="56"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="10">
                 <axis description="" id="1"/>
@@ -7867,6 +8097,8 @@
                 <button description="" id="39"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="12">
                 <axis description="" id="1"/>
@@ -7914,6 +8146,8 @@
                 <button description="" id="39"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="13">
                 <axis description="" id="1"/>
@@ -8055,6 +8289,8 @@
                 <button description="" id="39"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="16">
                 <axis description="" id="1"/>
@@ -8102,6 +8338,8 @@
                 <button description="" id="39"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="2">
                 <axis description="" id="1"/>
@@ -8230,6 +8468,8 @@
                 <button description="" id="56"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="4">
                 <axis description="" id="1"/>
@@ -8294,6 +8534,8 @@
                 <button description="" id="56"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="5">
                 <axis description="" id="1"/>
@@ -8452,6 +8694,8 @@
                 <button description="" id="39"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="8">
                 <axis description="" id="1"/>
@@ -8499,6 +8743,8 @@
                 <button description="" id="39"/>
                 <hat description="" id="1"/>
                 <hat description="" id="2"/>
+                <hat description="" id="3"/>
+                <hat description="" id="4"/>
             </mode>
             <mode name="9">
                 <axis description="" id="1"/>
