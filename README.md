@@ -4,7 +4,7 @@ A joystick gremlin map for vjoy, microsoft-sidewinder2 joystick, ch-pro throttle
 ## setup
 
 ### vJoy
-configure vjoy 1 to 8 with at least the 4 first axises, 2 POVs and 32 buttons. The number of axises or buttons must differ for joystick gremlin to work, so I use 33 buttons for vjoy 2, 34 buttons for vjoy3 etc. The map itself ignores these extraneous buttons, they are there just for joystick gremlin to recognize them as different devices.
+configure vjoy 1 to 8 with at least the 4 first axises, 4 POVs (continous) and 32 buttons. The number of axises or buttons must differ for joystick gremlin to work, so I use 33 buttons for vjoy 2, 34 buttons for vjoy3 etc. The map itself ignores these extraneous buttons, they are there just for joystick gremlin to recognize them as different devices.
 
 ### HidHide
 I use hidHide:
@@ -25,30 +25,29 @@ Put abe.action in data\input\custom in you il2 installation folder. Also rename 
 
 
 ## Description of the map
-I have found the use of modes to invaluable since it multiplies the actions that can be programmed. The amount of virtual buttons might feel overwhelming at first, but I have found that it allows me to group things together and makes it Easier to remember there everything is. You will have access to 256 virtual buttons plus 4 mouse buttons and 16 virtual hats + 8 axises. I use to ministick as mouse, but it would be easy to have that as 2 more axises if wanted.
+The amount of virtual buttons might feel overwhelming at first, but it makes it possible to organize the mappings logically so it is actually easier to remember there everything is. You will have access to 256 virtual buttons plus 4 mouse buttons and 32 virtual hats + 8 axises. The ministick on the CH pro throttle is configuered as a mouse, but it would be easy to remap the stick as axis x and y on vjoy 3 instead if wanted.
 
 ### Modes
-Buttons 5-8 on the sidewinder is used for "sticky mode". Button 3 and 4 controls mode 1-4 just like a shift/control key combination would. 
+Buttons 5-8 on the sidewinder is used for "sticky mode". Button 3 and 4 on the CH pro throttle controls mode 1-4 just like a shift/control key combination would. 
 
-* Mode 1: Release both button 3 and 4 on the throttle, 
+* Mode 1: button 3 and 4 on the throttle released, 
 * Mode 2: button 4 on the throttle
 * Mode 3 button 3 on the throttle
-* Mode 4: both button 3 and 4
+* Mode 4: both button 3 and 4 on the pro throttle
 
-This repeats for higher modes. Pushing button 5 - 8 controls the "sticky mode" on the sidewinder. So pushing button 6 on the sidewinder gives mode 5 if button 3 and 4 on the throttle are released, mode 6 if throttle button 4 is pressed and so on, so all in all there are 16 modes, for shift/control modes for each sticky mode.
+This pattern repeats for the higher modes. Pushing button 5 - 8 controls the "sticky mode" on the sidewinder. So pushing button 6 on the sidewinder gives mode 5 if button 3 and 4 on the throttle are released, mode 6 if throttle button 4 is pressed and so on. All in all there are 16 modes, four shift/control modes for each of the four sticky modes.
 
 ## Button mapping
-All buttons are mapped to joystick buttons different for all modes, making use of 8 vjoy devices. There are a few exceptions:
+All buttons are mapped to joystick buttons different on all modes, making use of all buttons on all 8 vjoy devices. There are a few exceptions:
 
-* The hats have only the first 2 shifted modes for all sticky modes as unique hats, shifted mode 3 and 4 falls back to the first hat, this is true for both the pro throttle and the sidewinder
 * Button 1, the fire button on the sidewinder is mapped to the same button in all modes
 * Button 1, the ministick on the pro throttle is mapped to mouse buttons and is the same for all sticky modes: 
-  - mode 1: left mouse button
-  - mode 2: right mouse button
-  - mode 3: middle mouse button
-  - mode 4: forward mouse button
-* Button 3 and 4 on the pro throttle are shift mode buttons
-* button 5-8 on the sidewinder are sticky mode buttons
+  - mode 1, 5, 9 and 13: left mouse button
+  - mode 2, 6, 10, 14: right mouse button
+  - mode 3, 7, 11, 15: middle mouse button
+  - mode 4, 8, 12, 16: forward mouse button
+* Button 3 and 4 on the pro throttle are shift mode buttons in all modes
+* button 5-8 on the sidewinder are buttons for the sticky modes and have the same functionality in all modes
 
 ## Pro throttle Ministick
 The PT ministick is mapped as mouse
